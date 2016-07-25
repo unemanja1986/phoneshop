@@ -1,0 +1,33 @@
+{
+  "name": "phoneshop",
+  "description": "mock shope for mobile phones",
+  "main": "index.js",
+  "authors": [
+    "Nemanja Unkovic"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "mock",
+    "phone",
+    "shop"
+  ],
+  "homepage": "https://github.com/unemanja1986/phoneshop",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "angular": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "normalize-css": "normalize.css#^4.2.0",
+    "modernizr": "^3.3.1",
+    "angular-route": "^1.5.8",
+    "font-awesome": "^4.6.3"
+  }
+}

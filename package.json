@@ -1,0 +1,39 @@
+{
+  "name": "phoneshop",
+  "version": "1.0.0",
+  "description": "mock shope for mobile phones",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install",
+    
+    "prestart": "npm install",
+    "start": "http-server ./app",
+      
+    "pretest": "npm install",
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unemanja1986/phoneshop.git"
+  },
+  "keywords": [
+    "mock",
+    "phone",
+    "shop"
+  ],
+  "author": "Nemanja Unkovic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unemanja1986/phoneshop/issues"
+  },
+  "homepage": "https://github.com/unemanja1986/phoneshop#readme",
+  "dependencies": {
+    "bower": "^1.7.9",
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^1.1.1",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2"
+  }
+}
