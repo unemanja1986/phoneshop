@@ -11,6 +11,10 @@
                 .state("home", {
                     url: "/",
                     template: "<home-page></home-page>"
+                })
+                .state("phones", {
+                    url: "/phones",
+                    template: "<phone-page></phone-page>"
                 });
         }]);
 }());

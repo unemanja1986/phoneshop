@@ -183,7 +183,7 @@ body {
 }
 
 .specialOffer img {
-    width: 70%;
+    width: 50%;
     height: auto;
     margin: 15px auto;
     display: block;
@@ -317,4 +317,189 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 10px;
+}
+
+/*
+    Contact
+*/
+
+.contact {
+    background: #ddd;
+    padding: 20px 0;
+    padding-left: 10%;
+}
+
+.contact h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 10px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 110%;
+}
+
+.contact label {
+    display: block;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #3498db;
+}
+
+.contact #name,
+.contact #email {
+    margin-top: 5px;
+    padding: 0 3px;
+    border: 2px solid #3498db;
+    color: 3498db;
+    width: 80%;
+    height: 30px;
+    outline: none;
+    line-height: 26px;
+}
+
+.contact #message {
+    margin-top: 5px;
+    padding: 0 3px;
+    border: 2px solid #3498db;
+    color: #3498db;
+    width: 80%;
+    height: 130px;
+    outline: none;
+    line-height: 145%;
+}
+
+.contact button {
+    width: 120px;
+    height: 40px;
+    background-color: #3498db;
+    border-radius: 200px;
+    text-align: center;
+    border: 2px solid #2980b9;
+    color: #fff;
+    line-height: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-right: 25px;
+    outline: none;
+}
+
+/*
+    Phone page
+*/
+
+.titlePhones {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 150%;
+}
+
+.titlePhones:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #3498db;
+    margin-top: 8px;
+}
+
+.filterBtn,
+.sortOrd {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filterBtn button {
+    width: 250px;
+    height: 40px;
+    outline: none;
+    background: #3498db;
+    border-radius: 200px;
+    text-align: center;
+    border: 2px solid #2980b9;
+    color: #fff;
+    line-height: 36px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#sort {
+    width: 250px;
+    height: 40px;
+    outline: none;
+    line-height: 36px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid #2980b9;
+    padding-left: 5px;
+}
+
+.listOfPhones {
+    list-style: none;
+    margin: 60px 35px;
+}
+
+.listOfPhones li {
+    border: 3px solid #3498db;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    border-radius: 5%;
+}
+
+.listOfPhones h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 30px;
+    color: #3498db;
+}
+
+.listOfPhones img {
+    height: 180px;
+    width: auto;
+    max-width: 230px;
+    display: block;
+    margin: 10px auto;
+}
+
+.listOfPhones .price {
+    text-align: center;
+    display: block;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 130%;
+    color: #3498db;
+}
+
+.listOfPhones .price .dollars {
+    font-family: 'Kaushan Script', cursive;
+}
+
+.listOfPhones .cart,
+.listOfPhones .btnInfo {
+    display: block;
+    width: 180px;
+    height: 40px;
+    margin: 10px auto;
+    outline: none;
+    background: #3498db;
+    border-radius: 200px;
+    text-align: center;
+    border: 2px solid #2980b9;
+    color: #fff;
+    line-height: 36px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
 }
