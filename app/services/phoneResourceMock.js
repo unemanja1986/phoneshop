@@ -504,6 +504,326 @@
             return [200, phone, {}];
         });
         
+        var computers = [
+            {
+                computerId: "1",
+                name: "Lenovo Ideacentre 510S Home PC",
+                processor: "Intel Celeron G3900 Processor ( 2.80GHz 2133MHz 2MB)",
+                operatingSystem: "Windows 10 Pro 64",
+                memory: "4.0GB PC4-17000 DDR4 UDIMM 2133MHz",
+                hardDrive: "500GB 7200 rpm",
+                opticalDrive: "DVD Recordable",
+                warranty: "One year Depot or Carry-in",
+                description: "Before buying a PC for your home, ask yourself: Is it easy to use for both the young and old alike? Has it the power, memory, and storage capacity to meet all your family's computing needs? Does it have a really low starting price? Then, take a look at the ideal family desktop—the Ideacentre 510S.",
+                computerImageUrl: "/img/lenovo-desktop-ideacentre-510s-hero.png",
+                price: "$499.00"
+            },
+            {
+                computerId: "2",
+                name: "Lenovo ThinkCentre M73 Small Desktop",
+                processor: "Intel Core i7-4790 Processor (8MB Cache, up to 4.0GHz)",
+                operatingSystem: "Windows 10 Pro 64",
+                memory: "16GB PC3-12800 DDR3 1600MHz UDIMM (8GBx2)",
+                hardDrive: "1TB 7200 rpm",
+                opticalDrive: "DVD Recordable",
+                warranty: "One year Depot or Carry-in",
+                description: "Make your IT deployment count with a M73 Small Desktop, an affordable but powerful small-form-factor desktop PC without compromising on performance. A great choice for your enterprise.",
+                computerImageUrl: "/img/lenovo-desktop-thinkcentre-m73sff-main.png",
+                price: "$1216.00"
+            },
+            {
+                computerId: "3",
+                name: "Lenovo ThinkCentre M93p SFF Pro",
+                processor: "Intel Core i7-4790 Processor (8MB Cache, up to 4.0GHz)",
+                operatingSystem: "Windows 10 Pro 64",
+                memory: "32GB PC3-12800 DDR3 1600MHz UDIMM (8GBx4)",
+                hardDrive: "512GB Solid State Drive, 2.5, SATA, 6Gb/s, Non OPAL",
+                opticalDrive: "DVD Burner/CD-RW, SATA",
+                warranty: "One year Depot or Carry-in",
+                description: "Powered for productivity, the ThinkCentre M93p small form factor pro (SFF Pro) is a great choice for large organisations that need the utmost in reliability, power, and data security, including the Intel® vPro™ technology for ~efficient enterprise-level manageability.",
+                computerImageUrl: "/img/lenovo-desktop-thinkcentre-m93m93p-sff-main.png",
+                price: "$1584.00"
+            },
+            {
+                computerId: "4",
+                name: "HP All-in-One PC (23.8)",
+                processor: "Intel Core i3-6100U 2.3GHz SKL",
+                operatingSystem: "Windows 10 Pro 64",
+                memory: "RAM 8GB (2x4GB) DDR4 2133",
+                hardDrive: "1TB 7200 RPM SATA 6G 3.5 Hard Drive",
+                opticalDrive: "Ultra Slim-tray SuperMulti DVD burner",
+                warranty: "1 year limited hardware warranty",
+                description: "Whether your family is looking to surf, stream or tackle that next big assignment, this budget friendly All-in-One has been redesigned to give everyone what they need. A splash of color and reliable, trusted performance make this the perfect living room go-to.",
+                computerImageUrl: "/img/c05169439.png",
+                price: "$729.00"
+            },
+            {
+                computerId: "5",
+                name: "HP ENVY 750 Desktop PC",
+                processor: "AMD A8-7600 quad-core processor",
+                operatingSystem: "Windows 7 Professional 64",
+                memory: "16GB DDR3-1600 DIMM (2x8GB) RAM",
+                hardDrive: "2TB 7200rpm SATA-6G RAID 1 Hard Drive",
+                opticalDrive: "SuperMulti DVD Burner",
+                warranty: "1 year limited hardware warranty",
+                description: "Innovative. Powerful. Just like you.",
+                computerImageUrl: "/img/ann_envyDesktop_gallery_01.jpg",
+                price: "$699.00"
+            },
+            {
+                computerId: "6",
+                name: "Apple - 21.5\" iMac",
+                processor: "5th Gen Intel® Core™ i5 processor",
+                operatingSystem: "OS X El Capitan",
+                memory: "8GB system memory for advanced multitasking",
+                hardDrive: "1TB hard drive for ample file storage space",
+                opticalDrive: null,
+                warranty: "1 year limited hardware warranty",
+                description: "Apple iMac MK142LL/A All-in-One: iMac features a gorgeous 21.5 widescreen display, powerful Intel processors, superfast graphics, and more. All in a stunningly thin enclosure that's only 5mm at its edge",
+                computerImageUrl: "/img/3093014_sd.jpg",
+                price: "$1099.99"
+            },
+            {
+                computerId: "7",
+                name: "Apple - 27\" iMac",
+                processor: "5th Gen Intel® Core™ i5 processor",
+                operatingSystem: "OS X El Capitan",
+                memory: "8GB system memory for advanced multitasking",
+                hardDrive: "1TB hard drive for ample file storage space",
+                opticalDrive: null,
+                warranty: "3 year limited hardware warranty",
+                description: "With 14.7 million pixels, the 27-inch iMac with Retina 5K display is the most powerful iMac ever. It features quad-core Intel® processors, the latest AMD graphics, a 1TB Fusion Drive, and great built-in apps. All in the same ultrathin design that's just 5mm at the edge.",
+                computerImageUrl: "/img/4260700_sd.jpg",
+                price: "$1999.99"
+            },
+            {
+                computerId: "8",
+                name: "Alienware ASM100 Core i5 4590T 8GB 1TB Desktop Tower",
+                processor: "Intel Core i5 quad core",
+                operatingSystem: null,
+                memory: "8GB RAM",
+                hardDrive: "1TB 7200 rpm",
+                opticalDrive: "DVD Recordable",
+                warranty: "One year Depot or Carry-in",
+                description: "Combine the freedom of PC gaming with the ease of console on the new Alienware Alpha.",
+                computerImageUrl: "/img/5164477_R_Z001A.jpg",
+                price: "$1299.00"
+            },
+            {
+                computerId: "9",
+                name: "Acer Aspire XC-704 23 Inch 8GB 3TB Desktop Monitor Bundle",
+                processor: "Intel Pentium quad core intel pentium j3710",
+                operatingSystem: "Microsoft Windows 10",
+                memory: "8GB RAM",
+                hardDrive: "3TB SATA-III hard drive",
+                opticalDrive: "DVD Recordable",
+                warranty: "1 year limited hardware warranty",
+                description: "Combine the freedom of PC gaming with the ease of console on the new Alienware Alpha.",
+                computerImageUrl: "/img/5458781_R_Z001A.jpg",
+                price: "$479.00"
+            }
+        ],
+            computersUrl = "/api/computers",
+            computersRegex = new RegExp(computersUrl + "/[0-9][0-9]*");
+
+        $httpBackend.whenGET(computersUrl).respond(computers);
+
+        $httpBackend.whenGET(computersRegex).respond(function (method, url, data) {
+            var computer = { computerId: 0 },
+                parameters = url.split("/"),
+                length = parameters.length,
+                id = parameters[length - 1];
+
+            if (id > 0) {
+                for (var i = computers.length - 1; i >= 0; i--) {
+                    if(computers[i].computerId == id) {
+                        computer = computers[i];
+                        break;
+                    }
+                }
+            }
+
+            return [200, computer, {}];
+        });
+
+        var laptops = [
+            {
+                laptopId: "1",
+                name: "Lenovo Z50-75 Signature Edition Laptop",
+                display: "15.6-inch HD display",
+                processor: "AMD FX-7500 2.10 GHz with Turbo up to 3.30 GHz",
+                operatingSystem: "Windows 10 Home, 64-bit",
+                memory: "8GB DDR3 1600 MHz",
+                hardDrive: "1TB 5400 RPM HDD",
+                video: "AMD Radeon R7 with shared graphics memory",
+                ports: "1 USB 3.0 • 2 USB 2.0 • HDMI • VGA • Headphone output/Microphone input combo • LAN (10/100/1000)",
+                battery: "4-cell (up to 5 hours)",
+                camera: "Integrated webcam",
+                dimensions: "15.11 x 10.43 x 0.98 in (383.79 x 264.92 x 24.89 mm)",
+                description: "Pump up the power for work and play with the mighty Lenovo Z50. It comes with a speedy AMD FX-7500 processor, massive 1TB hard drive, and 8GB of memory, making it a great for multitasking at the office or serving as a multimedia hub at home.",
+                price: "$499.00",
+                photoImg: "/img/en-INTL-L-Lenovo-Z50-QF9-00446-mnco.jpg"
+            },
+            {
+                laptopId: "2",
+                name: "HP Notebook 15-ay091ms Signature Edition Laptop",
+                display: "15.6-inch HD display",
+                processor: "Intel Core i3-6100U",
+                operatingSystem: "Windows 10 Home, 64-bit",
+                memory: "8GB DDR4 2133 MHz",
+                hardDrive: "1TB 5400 RPM HDD",
+                video: "Intel HD Graphics 520 with shared graphics memory",
+                ports: "1 USB 3.0 • 2 USB 2.0 • 1 HDMI • Headphone output/Microphone input combo • LAN (10/100)",
+                battery: "3-cell lithium-ion, 31WHr (up to 6 hours, 15 minutes)",
+                camera: "HP TrueVision HD webcam",
+                dimensions: "15.12 x 10.02 x 0.95 in (384.04 x 254.50 x 24.13 mm)",
+                description: "From its souped-up performance to its spacious touchscreen, the affordable HP Notebook 15 is set to be your go-to laptop. It combines a 6th Gen Intel Core i3 processor with 8GB of memory and a huge 1TB hard drive for excellent multitasking and multimedia capabilities. The Notebook 15 delivers great portability, too, with over 6 hours of battery life* and a weight that's just 4.6 pounds. All that in a slick-looking, brushed-aluminum frame highlighted with textured grooves.",
+                price: "$399.00",
+                photoImg: "/img/en-INTL-L-HP-Notebook-15-ay091ms-QF9-00442-mnco.jpg"
+            },
+            {
+                laptopId: "3",
+                name: "Dell XPS 15 9550-0000SLV Signature Edition Laptop",
+                display: "15.6 in 4K UHD LED InfinityEdge touchscreen (3840 x 2160), 10-finger multi-touch support",
+                processor: "Intel Core i5-6300HQ 2.30 GHz with Intel Turbo Boost Technology up to 3.20 GHz",
+                operatingSystem: "Windows 10 Home, 64-bit",
+                memory: "8GB DDR4 2133 MHz",
+                hardDrive: "256GB SSD",
+                video: "NVIDIA GeForce GTX 960M with 2GB graphics memory, Intel HD Graphics 530",
+                ports: "2 USB 3.0 (powered) • 1 USB 3.1 Type-C with Thunderbolt • HDMI • Headphone output/Microphone input combo",
+                battery: "6-cell 84WHr (up to 10 hours)",
+                camera: "Integrated webcam",
+                dimensions: "14.06 x 9.27 x 0.45-0.66 in (357.00 x 235.00 x 11.00-17.00 mm)",
+                description: "The XPS 15 delivers an incredible 8 million pixels on its 4K Ultra HD display—that's 4 million more pixels than Full HD. What you get is a view that's always precise, clear, and eye-poppingly lifelike. Movies jump off the screen. Presentations shine. And photos and videos can be edited with pinpoint precision.",
+                price: "$1599.00",
+                photoImg: "/img/en-INTL-L-Dell-XPS-15-i5-8gb-256gb-QF9-00100-mnco.jpg"
+            },
+            {
+                laptopId: "4",
+                name: "Dell XPS 13 9350-2007SLV Core i5 128GB Signature Edition Laptop",
+                display: "13.3 in Full HD LCD InfinityEdge touchscreen (1920 x 1080), 10-finger multi-touch support",
+                processor: "Intel Core i5-6200U 2.30 GHz with Intel Turbo Boost Technology up to 2.80 GHz",
+                operatingSystem: "Windows 10 Home, 64-bit",
+                memory: "8GB LPDDR3 1867 MHz",
+                hardDrive: "128GB SSD",
+                video: "Intel HD Graphics 520 with shared graphics memory",
+                ports: "2 USB 3.0 (1 powered) • 1 USB 3.1 Type-C with Thunderbolt • Headphone output/Microphone input combo",
+                battery: "4-cell smart lithium-ion 56WHr (up to 11 hours)",
+                camera: "Integrated webcam",
+                dimensions: "11.97 x 7.87 x 0.35-0.59 in (304.00 x 200.00 x 9.00-15.00 mm)",
+                description: "Premium construction, excellent portability, 6th Gen Intel Core i5 power—the Dell XPS 13 is as powerful and feature-packed as they get. It also features the world's first InfinityEdge display, a virtually borderless 13-inch screen placed into the body of an 11-inch laptop. Compared to the Apple MacBook Air 13, the XPS 13 is 23% smaller with the same size screen.",
+                price: "$999.00",
+                photoImg: "/img/en-INTL-L-Dell-XPS-13-Tch-i5-8gb-128gb-QF9-00476-mnco.jpg"
+            },
+            {
+                laptopId: "5",
+                name: "ASUS ZenBook Pro UX501JW-UH71T Signature Edition Laptop",
+                display: "15.6 in 4K Ultra IPS LED touchscreen (3840 x 2160), 10-finger multi-touch support",
+                processor: "Intel Core i7-4720HQ 2.60 GHz with Turbo Boost Technology up to 3.60 GHz",
+                operatingSystem: "Windows 10 Home, 64-bit",
+                memory: "16GB DDR3L 1600MHz",
+                hardDrive: "512GB SSD",
+                video: "NVIDIA GeForce GTX 960M with 2GB GDDR5 VRAM, Intel HD Graphics 4600",
+                ports: "3 USB 3.0 (1 USB Charger+) • HDMI • Mini DisplayPort with Thunderbolt • Headphone output/Microphone input combo • LAN (10/100 via included USB to Ethernet adapter)",
+                battery: "6-cell lithium-polymer, 96WHr",
+                camera: "HD webcam",
+                dimensions: "15.10 x 10.00 x 0.80 in (383.54 x 254.00 x 20.32 mm)",
+                description: "Dashing good looks, super-charged performance, and Windows 10 all add up to one premium laptop with the ASUS ZenBook Pro UX501. Its all-aluminum body is a true work of art, while the Intel Core i7 processor and 16GB of memory bring serious power. There are high-fidelity actuators built into the glass display, so you get twice the accuracy of standard touchscreens. And with Windows 10, you get easy ways to snap apps in place, create new desktops, and work and play across all your devices.",
+                price: "$1499.00",
+                photoImg: "/img/en-INTL-L-ASUS-UX501JW-UH71T-QF9-00058-mnco.jpg"
+            },
+            {
+                laptopId: "6",
+                name: "MSI GE72 Apache Pro-029 Signature Edition Gaming Laptop",
+                display: "17.3 in Full HD IPS LED (1920 x 1080)",
+                processor: "Intel Core i7-6700HQ 2.60 GHz with Turbo Boost Technology up to 3.50 GHz",
+                operatingSystem: "Windows 10 Home, 64-bit",
+                memory: "16GB DDR4 2133 MHz",
+                hardDrive: "128GB SSD + 1TB 7200 RPM HDD",
+                video: "NVIDIA GeForce GTX 960M with 2GB graphics memory, Intel HD Graphics 530",
+                ports: "2 USB 3.0 (1 powered) • 1 USB 3.1 Type-C • USB 2.0 • HDMI • Mini DisplayPort • Headphone output • Microphone input • LAN (10/100/1000)",
+                battery: "6-cell",
+                camera: "HD webcam",
+                dimensions: "16.53 x 11.33 x 1.17-1.25 in (419.90 x 287.80 x 29.80-32.00 mm)",
+                description: "Become all-powerful with the feature-packed MSI GE72 Apache Pro laptop. It delivers desktop performance with a 6th Gen Intel Core i7 processor, NVIDIA GeForce GTX 960M graphics, DVD SuperMulti drive, and HDD and SSD storage. All that in a slim and lightweight 17.3-inch frame that's agile enough for go-anywhere gaming.",
+                price: "$1299.99",
+                photoImg: "/img/en-INTL-L-MSI-GE72-Apache-Pro-029-QF9-00147-mnco.jpg"
+            },
+            {
+                laptopId: "7",
+                name: "Razer Blade Signature Edition Gaming Laptop",
+                display: "14 in QHD+ LED-backlit (3200 x 1800), 10-finger multi-touch support",
+                processor: "Intel Core i7-4720HQ 2.60 GHz with Turbo Boost Technology up to 3.60 GHz",
+                operatingSystem: "Windows 10 Home, 64-bit",
+                memory: "16GB DDR3L 1600 MHz",
+                hardDrive: "256GB SSD",
+                video: "NVIDIA GeForce GTX 970M with 3GB graphics memory, Intel HD Graphics 4600",
+                ports: "3 USB 3.0 • HDMI • Headphone output/Microphone input combo",
+                battery: "70 WHr lithium-ion",
+                camera: "2MP webcam",
+                dimensions: "13.60 x 9.30 x 0.70 in (345.44 x 236.22 x 17.78 mm)",
+                description: "Already the thinnest and lightest 14-inch gaming laptop, the Razer Blade now comes with twice the memory at 16GB. It's razor-slim at 0.70 inches and super-charged with an Intel Core i7 processor, 256GB SSD, and NVIDIA GeForce GTX 970M graphics. All that and a stunning QHD+ touchscreen for intense visuals. And with Windows 10, you get easy ways to snap apps in place, create new desktops, and work and play across all your devices.",
+                price: "$2399.00",
+                photoImg: "/img/en-INTL-L-Razer-Blade-14in-QHDplus-256GB-W10-Black-CWF-02207-mnco.jpg"
+            },
+            {
+                laptopId: "8",
+                name: "Surface 3 LTE - 64GB",
+                display: "10.8” ClearType Full HD Plus Display • Resolution: 1920 x 1280 • Aspect ratio: 3:2 • Touch: 10 point multi-touch • Surface Pen support",
+                processor: "Quad-core Intel Atom x7-Z8700 processor (2MB Cache, 1.6GHz with Intel Burst technology up to 2.4GHz). Surface 3 offers more than 80% of the performance of Surface Pro 3 with Intel Core i3 processor (according to PCMark 8 Creative Conventional test).",
+                operatingSystem: "Windows 10 • 1-year of Office 365 Personal with OneDrive cloud storage",
+                memory: "4GB ",
+                hardDrive: "128GB",
+                video: "i5: Intel HD graphics (non-GPU)",
+                ports: "Full-size USB 3.0 • Mini DisplayPort • microSD card reader • Micro USB charging port • Headset jack • Cover port",
+                battery: "",
+                camera: "3.5 megapixel front-facing camera • 8.0 megapixel rear-facing camera with autofocus • Microphone • Stereo speakers with Dolby audio",
+                dimensions: "10.52 x 7.36 x 0.34 in (267 x 187 x 8.7 mm)",
+                description: "With the ability to run desktop software, a full-size USB 3.0 port, and an integrated Kickstand, Surface 3 is the perfect productivity device for school, home, and on the go. Includes Office 365 Personal.",
+                price: "$599.00",
+                photoImg: "/img/en-INTL-PDP0-Themis-64GB-7G5-00001-P1.jpg"
+            },
+            {
+                laptopId: "9",
+                name: "Microsoft Surface Book - 128GB / Intel Core i5",
+                display: "Screen: 13.5” PixelSense display • Resolution: 3000 x 2000 (267 PPI) • Aspect ratio: 3:2 • Touch: 10 point multi-touch",
+                processor: "6th Gen Intel Core i5 or i7",
+                operatingSystem: "Windows 10 Pro • Office 30-day trial",
+                memory: "8GB or 16GB RAM",
+                hardDrive: "Solid state drive (SSD) options: 128GB, 256GB, 512GB, or 1TB",
+                video: "i5: Intel HD graphics (non-GPU) • i5/i7: NVIDIA GeForce graphics (GPU)",
+                ports: "Two full-size USB 3.0, Full-size SD card reader, Surface Connect, Headset jack, Mini DisplayPort",
+                battery: "Up to 12 hours of video playback",
+                camera: "5.0 megapixel front-facing camera, 8.0 megapixel rear-facing camera with autofocus, with 1080p HD video recording",
+                dimensions: "9.14 x 12.30 x 0.51- 0.90 in ( 232.1 x 312.3 x 13 -22.8 mm)",
+                description: "Surface Book weighs as little as 3.34 pounds and its 13.5-inch PixelSense display has incredible resolution (3000 x 2000). It's calibrated for true-to-life color, with high contrast and low glare. Detach the screen to use like a clipboard, or rotate and reattach the screen to use the Optional NVIDIA GeForce GPU. When you need to connect to other devices and accessories, Surface Book has advanced wireless options and all the ports you need.",
+                price: "$1349.00",
+                photoImg: "/img/en-INTL-Surface-Book-CR9-00001-SP01.jpg"
+            }
+        ],
+            laptopsUrl = "/api/laptops",
+            laptopsRegex = new RegExp(laptopsUrl + "/[0-9][0-9]*");
+
+        $httpBackend.whenGET(laptopsUrl).respond(laptops);
+
+        $httpBackend.whenGET(laptopsRegex).respond(function (method, url, data) {
+            var laptop = { laptopId: 0 },
+                parameters = url.split("/"),
+                length = parameters.length,
+                id = parameters[length - 1];
+
+            if (id > 0) {
+                for (var i = laptops.length - 1; i >= 0; i--) {
+                    if(laptops[i].laptopId == id) {
+                        laptop = laptops[i];
+                        break;
+                    }
+                }
+            }
+
+            return [200, laptop, {}];
+        });         
+
         $httpBackend.whenGET(/components/).passThrough();
     });
 }());

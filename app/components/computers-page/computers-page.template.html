@@ -1,0 +1,27 @@
+<h1 class="computersPageHeading">Desktop Computers</h1>
+
+<div class="filterBtn">
+    <button type="button">
+        Filters
+    </button>
+</div>
+
+<div class="sortOrd">
+    <select name="sort" id="sort">
+        <option value="priceasc">Price: Low To High</option>
+        <option value="pricedes">Price: High To Low</option>
+        <option selected value="newest">Newest Phones</option>
+        <option value="alphaasc">Alphabetical: A to Z</option>
+        <option value="alphades">Alphabetical: Z to A</option>
+    </select>
+</div>
+
+<ul class="listOfComputers">
+    <li ng-repeat="computer in $ctrl.computers">
+        <h2 class="computerName">{{computer.name}}</h2>
+        <img ng-src="{{computer.computerImageUrl}}" alt="{{computer.name}}">
+        <span class="price">Price: <span class="dollars">{{computer.price}}</span></span>
+        <button class="cart" type="button">Add to Cart</button>
+        <a href="#" class="btnInfo">More Info</a>
+    </li>
+</ul>
